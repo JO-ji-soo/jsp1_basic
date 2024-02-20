@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 작성자 : 권태윤   -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>NC Dinos</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <ul>
+      <li><img src="assets/images/img-embelm-128@2x.png" width="50px" height="50px" class="img"></li>
+      
+
+        <h3>회원가입</h3>
+        <p>티켓예매, 포인트 등 다양한 혜택을 누리세요.</p>
+    <div class="content">
+    <!-- action에 서버의 주소를 설정합니다.. 
+    	method 속성은 get은 조회, post는 저장(수정) --> -->
+      <form action="welcome.html" id="form">
+        <tr>
+          <th>아이디(필수)</th>
+          <td><input type="text" name="id" id="" placeholder="아이디를 입력해주세요"><button>중복확인</button></td>
+        </tr>
+        <tr>
+          <th>비밀번호(필수)</th><br class="pw">비밀번호는 6글자 이상입니다.
+          <td><input type="password" name="pw" id="" placeholder="비밀번호를 입력해주세요"></td>
+        </tr>
+          <th>비밀번호 확인</th>
+          <td><input type="password" name="pw" id="" placeholder="비밀번호를 다시 한번 입력해주세요"></td>
+        </tr>
+        <tr>
+          <th>이름(필수)</th>
+          <td><input type="text" name="name" id="" placeholder="이름을 입력해주세요"></td>
+        </tr>
+        <tr>
+          <th>생년월일(필수)</th>
+          <td><input type="text" name="day" id="" placeholder="년도 4자리-월 2자리-일 2자리"></td>
+        </tr>
+        <ul>성별(필수)
+          <li>
+            <input type="radio" name="gender" id="man" value="male"> 남자
+            <label for="radio"></label>
+            <input type="radio" name="gender" id="woman" value="female"> 여자
+            <label for="gender"></label>
+          </li>
+        </ul>
+        <tr>
+          <th>전화번호(필수)</th>
+          <td><input type="text" name="number" id="" placeholder="연락처"></td>
+        </tr>
+        <tr>
+          <th>이메일</th>
+          <td><input type="text" name="eamil" id="" placeholder="이메일을 입력해주세요"></td>
+        </tr>
+        <tr>
+          <th>주소</th>
+          <td><input type="text" name="adress" id="" placeholder="우편번호"><button>검색</button></td>
+          <td><input type="text" name="adress" id="" placeholder="주소"></td>
+          <td><input type="text" name="adress" id="" placeholder="주소 검색 후 상세주소를 입력해주세요"></td>
+        </tr>
+        <tr>
+          <th>선호팀</th>
+          <td>
+          <select name="" id="" >
+            <option value="0">선택하세요</option>
+            <option value="1">NC다이노스</option>
+            <option value="2">LG트윈스</option>
+            <option value="3">SSG랜더스</option>
+            <option value="4">KIA타이거즈</option>
+            <option value="5">KT위즈</option>
+            <option value="6">삼성 라이온즈</option>
+            <option value="7">롯데 자이언츠</option>
+            <option value="8">한화 이글스</option>
+            <option value="9">키움 히어로즈</option>
+            <option value="10">두산 베어스</option>
+          </td>  
+          </select>
+        </tr>
+      </form>
+      <button type="button" id="join">회원가입</button>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>
