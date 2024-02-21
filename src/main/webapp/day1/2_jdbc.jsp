@@ -33,6 +33,8 @@
 		<td><%=vo.getAge() %></td>
 		<td><%=vo.getReg_date() %></td>
 	</tr>
+	
+
 <%
 	}
 %>
